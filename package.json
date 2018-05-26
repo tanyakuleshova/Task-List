@@ -3,6 +3,8 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
+    "preinstall": "npm install --global postcss-cli autoprefixer",
+    "autoprefixer": "postcss public/css/*.css --use autoprefixer -d public/css -w",
     "start": "webpack-dev-server",
     "build": "webpack"
   },
